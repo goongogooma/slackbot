@@ -35,7 +35,7 @@ def _crawl_opgg(text):
         for past in soup.find("ul", {"class": "PastRankList"}).find_all("li", recursive=False):
             pRank.append(past.get_text().strip())
         pRank = '\n'.join(pRank)
-        string = str(name) + "님의 과거 랭크 ↓↓↓ \n" + str(u''.join(pRank))
+        string = str(name) + "님의 이전 시즌 랭크 정보 ↓↓↓ \n" + str(u''.join(pRank))
         return string
     elif "mostchamp" in com:
         champs = []
