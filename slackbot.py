@@ -47,7 +47,7 @@ def _crawl_opgg(text):
         except AttributeError as e:
             string = str(name) + "님은 현재 시즌 게임을 플레이하지 않았습니다"
             return string
-        string = str(name) + "님의 모스트 5 챔피언 ↓↓↓\n" + str(u''.join(champs))
+        string = str(name) + "님의 상위 5 챔피언 ↓↓↓\n" + str(u''.join(champs))
         return string
     elif "check" in com:
         check_state = []
